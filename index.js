@@ -3,10 +3,11 @@ import "./components/links.js";
 
 document.addEventListener('DOMContentLoaded', () => {
 	const inicio = new Route('Inicio', '/', '/routes/inicio.html');
-	const novoTreino = new Route('Sobre', '/sobre', '/routes/sobre.html');
+	const sobre = new Route('Sobre', '/sobre', '/routes/sobre.html');
 
 	router.addRoute(inicio);
-	router.addRoute(novoTreino);
+	router.addRoute(sobre);
 
+	// Load the initial route
 	router.loadRoute(inicio);
 });
